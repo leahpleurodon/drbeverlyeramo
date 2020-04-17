@@ -1,9 +1,86 @@
+@media only screen and (min-width: 800px) {
+
+  nav {
+    padding: 3vh 7vw 0 7vw;
+    margin-bottom: 3vh;
+    height: 6vh;
+    width: 100vw;
+    background-color: white;
+  }
+
+  nav ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+  }
+  nav li{
+    list-style: none;
+    margin: 0 1.6vw;
+  }
+  
+  .hero-image{
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto
+  }
+  
+  .hero-image>img{
+    width: auto;
+    height: 100%;
+    margin-left: -2.5vw;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+
+  nav {
+    padding: 3vh 7vw 0 7vw;
+    margin-bottom: 3vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 1.3em;
+  }
+  nav ul{
+    padding: 0;
+  }
+  nav li{
+    list-style: none;
+    margin: 0 2vw 2vw 2vw;
+  }
+  
+  .hero-image{
+    width: 15vh;
+    height: 15vh;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto
+  }
+  
+  .hero-image>img{
+    width: auto;
+    height: 100%;
+    margin-left: -5vh;
+  }
+}
+
+html{
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+
 *{
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-
 }
+
 a{
   color: black;
   text-decoration: none;
@@ -14,35 +91,17 @@ a:hover{
   color: gray;
 }
 
-nav {
-  padding: 3vh 7vw 0 7vw;
-  margin-bottom: 3vh;
-  height: 6vh;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  background-color: white;
-}
-
-nav ul{
-  display: flex;
-  padding: 0;
-  justify-content: space-around;
-}
-nav li{
-  list-style: none;
-  margin: 0 5vw;
-}
-
-main{
-  margin-top: 9vh;
-  margin-bottom: 3vh;
-  min-height: 82vh;
+.bullet{
+  font-size: 1.9em;
 }
 
 footer{
   padding: 2vh 7vw;
   height: 6vh;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100vw;
 }
 
 .covid-update{
@@ -66,16 +125,33 @@ html {
   scroll-behavior: smooth;
 }
 
-.hero-image{
-  width: 15vw;
-  height: 15vw;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: auto
+article{
+  padding: 0 7vw 8vw 7vw;
 }
 
-.hero-image>img{
-  width: auto;
-  height: 100%;
-  margin-left: -70px;
+iframe{
+  width: 40vw;
+  height: 40vw;
+  display:block;
+  margin: auto;
+}
+
+video{
+  max-width: 50vw;
+  margin: auto;
+  display: block;
+}
+
+.button{
+  display: block;
+  padding: 1.5em;
+  font-size: larger;
+  text-align: center;
+  border: 0.2em solid black;
+  margin: 4vh 10vh;
+}
+
+button:hover{
+  cursor: pointer;
+  border: 0.2em solid lightgray;
 }
