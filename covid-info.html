@@ -1,53 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <title>Dr. Beverly Eramo</title>
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./covid-info.html">Covid-19 Information</a></li>
-      <li><a href="./remote-appts.html">Remote Appointments</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper teal darken-1">
+        <ul id="nav-mobile" class="right hide-on-large-only">
+          <li> <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </li>
+        </ul>
+        <ul id="nav" class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./covid-info.html">Covid-19 Information</a></li>
+          <li><a href="./remote-appts.html">Remote Appointments</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./covid-info.html">Covid-19 Information</a></li>
+    <li><a href="./remote-appts.html">Remote Appointments</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
   <main>
-    <section class="covid-update">
-      <h2>COVID-19 Update</h2>
-      <p>All appointments will be provided remotely using the Telehealth software Coviu until further notice. Please see <a href="./remote-appts.html" style="text-decoration: underline;">here</a> for instructions on how to attend your appointment remotely.</p>
-    </section>
-    <article>
-      <p style="margin-bottom: 5vh;">
-        Currently Telehealth consultations are on offer. These consultations are still eligible for bulk billing if accompanied by a G.P referral.
-      </p>
-      <p style="margin-bottom: 5vh;">
+    <!-- covid warning -->
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card red lighten-3 black-text">
+          <div class="card-content">
+            <span class="card-title">COVID-19 Update</span>
+            <p>All appointments will be provided remotely using the Telehealth software Coviu until further notice.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="./remote-appts.html" style="text-decoration: underline;" class="black-text">How do I attend a
+              remote appointment?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5 style="margin-bottom: 5vw;">
+        Currently Telehealth consultations are on offer. These consultations are still eligible for bulk billing if
+        accompanied by a G.P referral.
         Here are some resources that may help you in the mean time.
-      </p>
-      <p style="margin-bottom: 5vh;">
-        <h3>Department of Health Coronavirus Health Information Line</h3>
-        Call <b>1800 020 080</b> if you are seeking information on novel coronavirus. The line operates 24 hours a day, seven days a week
-      </p>
-      <p style="margin-bottom: 5vh;">
-        <h3>Australian Government Department of health Coronavirus resources</h3>
-        <a href="https://www.health.gov.au/resources/collections/novel-coronavirus-2019-ncov-resources">
-          https://www.health.gov.au/resources/collections/novel-coronavirus-2019-ncov-resources
-        </a>
-      </p>
-      <p style="margin-bottom: 5vh;">
-        <h3>Australian Psychological Society's Coronavirus resources for mental health.</h3>
-        <a href="https://www.psychology.org.au/COVID-19-Australians">
-          https://www.psychology.org.au/COVID-19-Australians
-        </a>
-      </p>
-    </article>
+      </h5>
+
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Department of Health Coronavirus Health Information Line.</h4>
+            </div>
+            <div class="card-action">
+              <p>Call <b>1800 020 080</b> if you are seeking information on novel coronavirus. The line operates 24
+                hours a day,seven days a week
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Australian Government Department of health Coronavirus resources.</h4>
+            </div>
+            <div class="card-action">
+              <a href="https://www.health.gov.au/resources/collections/novel-coronavirus-2019-ncov-resources">
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m7">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>Australian Psychological Society's Coronavirus resources for mental health.</h4>
+            </div>
+            <div class="card-action">
+              <a href="https://www.psychology.org.au/COVID-19-Australians">
+                Click here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script> Dr. Beverly Eramo. All rights reserved. </p>
+  <!-- footer -->
+  <footer class="page-footer teal darken-1">
+    <div class="container">
+      &copy; Copyright
+      <script>document.write(new Date().getFullYear())</script> Dr. Beverly Eramo. All rights reserved.
+    </div>
   </footer>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
+
 </html>
